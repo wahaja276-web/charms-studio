@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CharmsStudio Hero Section</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-[#0b0114] text-white  flex flex-col justify-between relative overflow-x-hidden translate-y-8">
+  <!-- section---------------------------1 -->
+  <!-- Ambient Glowing Background Circles -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0  ">
+    <div
+      class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-purple-900/40 blur-[130px] rounded-full">
+    </div>
+    <div class="absolute top-1/3 -right-20 w-[450px] h-[450px] bg-pink-600/25 blur-[140px] rounded-full"></div>
+    <div class="absolute bottom-10 left-10 w-[550px] h-[550px] bg-fuchsia-900/30 blur-[150px] rounded-full"></div>
+  </div>
+
+  <!-- HEADER / NAVIGATION BAR -->
+  <header class="sticky top-0 md:static z-50 px-4 sm:px-6 lg:px-12 -py-3 ">
+    <nav
+      class="max-w-7xl h-20 mx-auto bg-[#1e0f2d]/90 backdrop-blur-xl  border-white/10  px-4 sm:px-6 py-2.5 flex items-center justify-between shadow-2xl relative">
+
+      <!-- Logo Section -->
+      <a href="#" class="flex items-center gap-3 group shrink-0">
+        <div
+          class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-[2px] transition-transform duration-300 group-hover:scale-105">
+          <div class="w-full h-full bg-purple-950 rounded-full flex items-center justify-center overflow-hidden">
+            <img src="image/001.png" alt="Logo" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="font-bold text-lg sm:text-xl tracking-tight font-dosis">
+          <span class="text-pink-500 group-hover:text-pink-400 transition-colors">Charms</span><span
+            class="text-yellow-400 group-hover:text-yellow-300 transition-colors">Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Center Navigation Capsule Menu -->
+      <div class="hidden lg:flex items-center bg-white/[0.04] backdrop-blur-md rounded-full p-2 border border-white/10">
+        <a href="#home"
+          class="px-5 py-1.5 rounded-full text-sm font-medium text-white hover:bg-pink-500/35 hover:border border-pink-500/60 hover:shadow-[0_0_15px_rgba(255,46,147,0.4)] transition-all">Home</a>
+        <a href="#fandoms"
+          class="px-5 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white transition-all  hover:bg-pink-500/35 hover:border border-pink-500/60 hover:shadow-[0_0_15px_rgba(255,46,147,0.4)] ">Fandoms</a>
+        <a href="#categories"
+          class="px-5 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white  hover:bg-pink-500/35 hover:border border-pink-500/60 hover:shadow-[0_0_15px_rgba(255,46,147,0.4)] transition-all">Categories</a>
+        <a href="#new"
+          class="px-5 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white  hover:bg-pink-500/35 hover:border border-pink-500/60 hover:shadow-[0_0_15px_rgba(255,46,147,0.4)] transition-all">New
+          Arrivals</a>
+        <a href="#bestsellers"
+          class="px-5 py-1.5 rounded-full text-sm font-medium text-gray-300 hover:text-white  hover:bg-pink-500/35 hover:border border-pink-500/60 hover:shadow-[0_0_15px_rgba(255,46,147,0.4)] transition-all">Best
+          Sellers</a>
+      </div>
+
+      <!-- Right Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Wishlist Button (Desktop) -->
+        <button
+          class="w-10 h-10 rounded-full bg-white/[0.07] backdrop-blur-md border border-white/10 flex items-center justify-center text-gray-200 hover:text-white hover:bg-pink-500 hover:scale-105 active:scale-95 transition-all md:flex hidden"
+          title="Wishlist">
+          <i class="fa-regular fa-heart text-base"></i>
+        </button>
+
+        <!-- Cart Button (Desktop) -->
+        <button
+          class="w-10 h-10 rounded-full bg-white/[0.07] backdrop-blur-md border border-white/10 flex items-center justify-center text-gray-200 hover:text-white hover:bg-pink-500 hover:scale-105 active:scale-95 transition-all relative md:flex hidden"
+          title="Cart">
+          <i class="fa-solid fa-cart-shopping text-sm"></i>
+        </button>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/" target="_blank"
+          class="hidden sm:flex items-center gap-2 bg-white hover:bg-pink-500 hover:text-white text-black font-semibold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-full shadow-lg hover:shadow-white/20 hover:scale-105 active:scale-95 transition-all">
+          <span>Ask on WhatsApp</span>
+        </a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button id="mobileMenuBtn"
+          class="lg:hidden w-10 h-10 rounded-full bg-white/[0.07] backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-white/10 active:scale-95 transition-all">
+          <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer"
+      class="hidden lg:hidden max-w-7xl mx-auto mt-2 bg-[#1e0f2d]/80 backdrop-blur-xl rounded-2xl p-4 flex-col gap-2 transition-all shadow-2xl border border-white/10">
+
+      <!-- Mobile Icon Buttons Row (Wishlist & Cart inside Menu) -->
+      <div class="grid grid-cols-2 gap-2 pb-3 border-b border-white/10 mb-1">
+        <a href="#"
+          class="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/[0.07] text-gray-200 hover:text-white text-sm font-medium border border-white/10">
+          <i class="fa-regular fa-heart text-pink-400"></i> Wishlist
+        </a>
+        <a href="#"
+          class="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/[0.07] text-gray-200 hover:text-white text-sm font-medium border border-white/10 relative">
+          <i class="fa-solid fa-cart-shopping text-pink-400"></i> Cart
+          <!-- <span class="bg-pink-500 text-white text-[10px] px-1.5 py-0.2 rounded-full font-bold">2</span> -->
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <a href="#home" class="px-4 py-2.5 rounded-xl bg-pink-500/20 text-white font-medium">Home</a>
+      <a href="#fandoms"
+        class="px-4 py-2.5 rounded-xl text-gray-300 hover:bg-white/10 hover:text-white transition-colors">Fandoms</a>
+      <a href="#categories"
+        class="px-4 py-2.5 rounded-xl text-gray-300 hover:bg-white/10 hover:text-white transition-colors">Categories</a>
+      <a href="#new"
+        class="px-4 py-2.5 rounded-xl text-gray-300 hover:bg-white/10 hover:text-white transition-colors">New
+        Arrivals</a>
+      <a href="#bestsellers"
+        class="px-4 py-2.5 rounded-xl text-gray-300 hover:bg-white/10 hover:text-white transition-colors">Best
+        Sellers</a>
+
+      <!-- WhatsApp Button inside Mobile Menu -->
+      <div class="pt-2 border-t border-white/10 mt-1 sm:hidden">
+        <a href="https://wa.me/"
+          class="w-full flex items-center justify-center gap-2 bg-white text-black font-semibold text-sm py-2.5 rounded-xl">
+          <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i>
+          <span>Ask on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <!-- HERO SECTION WITH CLEAR BACKGROUND & NO ANIMATIONS -->
+  <section
+    class="w-full lg:h-[140vh] md:h-[120vh] h-[110vh] relative   md:bg-[url('image/image%2022.png')] bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden py-12 sm:py-16 md:py-20 lg:-translate-y-16 -translate-y-8 md:-translate-y-4 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-pink-300 after:to-orange-700">
+
+    <!-- Mobile par text ki readability ke liye halka dark overlay (Optional) -->
+    <div class="absolute inset-0 bg-purple-900/80 blur-[130px] md:bg-transparent z-0 bottom-10"></div>
+
+    <!-- Hero Content Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10 w-full lg:mt-0 md:mt-[550px] mt-[350px]">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center w-full">
+
+        <!-- Left Column: Title, Subtitle & Search -->
+        <div class="lg:col-span-6 space-y-4 sm:space-y-6  lg:text-left md:text-left text-left md:mt-[100px]">
+
+          <!-- Pill Badge -->
+          <div
+            class="inline-flex items-center gap-2 px-3 sm:px-4 py-1 ml-0 sm:py-1.5 rounded-full bg-white/[0.1] backdrop-blur-md border border-yellow-500/30 text-white text-[10px] sm:text-xs md:text-sm font-semibold tracking-wider uppercase shadow-md mx-auto lg:mx-0">
+            <span class="text-white">
+              <i class="fa-solid fa-heart text-yellow-200 "></i>
+            </span> YOUR FANDOM. YOUR COLLECTION.
+          </div>
+
+          <!-- Headline -->
+
+          <style>
+            @keyframes typing {
+
+              0%,
+              100% {
+                width: 0;
+              }
+
+              40%,
+              60% {
+                width: 7ch;
+              }
+            }
+
+            .typing-text {
+              display: inline-block;
+              width: 0;
+              overflow: hidden;
+              white-space: nowrap;
+              animation: typing 2s steps(7) infinite;
+              vertical-align: bottom;
+            }
+
+
+
+            @keyframes blink {
+              50% {
+                opacity: 0;
+              }
+            }
+          </style>
+
+          <h1
+            class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight sm:leading-none">
+
+            <span class="block text-white drop-shadow-lg">
+              Find Your
+            </span>
+
+            <span class="block mt-1 sm:mt-2">
+              <span
+                class="typing-text text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-rose-300 to-yellow-400 drop-shadow-[0_0_25px_rgba(255,46,147,0.7)]">Fandom</span>
+            </span>
+
+          </h1>
+
+
+
+
+          <!-- Subtitle -->
+          <p
+            class="text-gray-200 text-xs md:ms-0 sm:text-lg md:text-lg max-w-xl sm:max-w-lg md:max-w-sm mx-auto lg:mx-0 font-normal leading-relaxed drop-shadow">
+            Discover anime, K-pop, Disney, Sanrio, gaming, movies, TV and more — all in one epic collection.
+          </p>
+
+          <!-- CTA Action Buttons -->
+          <div class="flex flex-wrap sm:flex-row items-center justify-center lg:justify-start md:justify-start md:ms-0 -ms-24   gap-2.5 sm:gap-4 pt-2">
+            <a href="#categories"
+              class="md:w-[28vw] w-[60vw] px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white font-semibold text-xs sm:text-sm md:text-base shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+              <span>Explore Categories</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#partner"
+              class=" md:w-[28vw] w-[60vw] px-5 sm:px-7 py-3 sm:py-3.5 rounded-full bg-white/[0.2] backdrop-blur-md border border-white/20 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm md:text-base hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+              <span>Partner With Us</span>
+              <i class="fa-solid fa-arrow-right text-xs text-gray-300"></i>
+            </a>
+          </div>
+
+          <!-- Search Bar & Popular Tags -->
+          <div class="pt-2 sm:pt-4 md:w-[90vh] w-[50vh]  mx-auto lg:mx-0 md:ms-0 ms-0">
+            <div
+              class="relative bg-white/[0.1] backdrop-blur-md rounded-full p-1 sm:p-1.5 flex items-center border border-white/30 focus-within:border-pink-500 transition-all shadow-xl">
+              <i class="fa-solid fa-magnifying-glass text-gray-300 ml-3 sm:ml-4 mr-2 text-xs sm:text-base"></i>
+              <input type="text" placeholder="Search character, fandom, product..."
+                class="bg-transparent border-none outline-none text-white text-xs sm:text-sm w-full placeholder-gray-300 pr-2">
+              <button
+                class="bg-pink-500 hover:bg-pink-600 text-white font-medium text-xs sm:text-sm px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full transition-all shadow-md shrink-0">
+                Search
+              </button>
+            </div>
+
+            <!-- Popular Searches -->
+            <div
+              class="flex flex-wrap items-center justify-center lg:justify-start gap-1.5 sm:gap-2 mt-3 sm:mt-4 text-[11px] sm:text-xs">
+              <span
+                class="text-gray-300 font-medium mr-1 w-full sm:w-auto text-center sm:text-left mb-1 sm:mb-0">Popular
+                searches:</span>
+              <button
+                class="bg-white/[0.1] border border-white/20 w-16 sm:px-3 h-8 sm:py-1 rounded-full text-gray-200 hover:text-white hover:border-pink-500/50 transition-all hover:bg-pink-600">Gojo</button>
+              <button
+                class="bg-white/[0.1] border border-white/20 w-12 sm:px-3 h-8 sm:py-1 rounded-full text-gray-200 hover:text-white hover:border-pink-500/50 transition-all hover:bg-pink-600">JJK</button>
+              <button
+                class="bg-white/[0.1] border border-white/20 w-24 sm:px-3 h-8 sm:py-1 rounded-full text-gray-200 hover:text-white hover:border-pink-500/50 transition-all hover:bg-pink-500">Keychains</button>
+              <button
+                class="bg-white/[0.1] border border-white/20 w-20 sm:px-3 h-8 sm:py-1 rounded-full text-gray-200 hover:text-white hover:border-pink-500/50 transition-all hover:bg-pink-500">Anime</button>
+              <button
+                class="bg-white/[0.1] border border-white/20 w-20 sm:px-3 h-8 sm:py-1 rounded-full text-gray-200 hover:text-white hover:border-pink-500/50 transition-all hover:bg-pink-500">Sanrio</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Static 3D Visual -->
+        <div
+          class="lg:col-span-6 relative flex justify-center items-center min-h-[300px] sm:min-h-[420px] md:min-h-[480px] lg:min-h-[500px] mt-4 sm:mt-6 lg:mt-0">
+          <!-- 3D Visual Content -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript Toggle -->
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const menuIcon = document.getElementById('menuIcon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileDrawer.classList.toggle('hidden');
+      mobileDrawer.classList.toggle('flex');
+      if (mobileDrawer.classList.contains('flex')) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+      } else {
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+      }
+    });
+
+  </script>
+  <!-- section-------------------------2 -->
+
+  <!-- Features Bar Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 z-0">
+    <div class="bg-[#1e0f2d]/70 backdrop-blur-xl border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl transition-all  duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 items-center divide-y sm:divide-y-0 lg:divide-x divide-white/10">
+
+        <!-- Item 1: Fandom Products -->
+        <div class="flex items-center gap-4 lg:px-6 pt-4 sm:pt-0">
+          <div>
+            <img src="image/icon-container.png" alt="" class=" transition-all duration-500 hover:scale-110" >
+      
+          </div>
+          <div>
+            <p class="text-xs text-gray-400 font-medium">Thousands of</p>
+            <h4 class="text-sm sm:text-base font-bold text-white">Fandom Products</h4>
+          </div>
+        </div>
+
+        <!-- Item 2: New Drops -->
+        <div class="flex items-center gap-4 lg:px-6 pt-4 sm:pt-0">
+          <div
+            class=" rounded-2xl   flex items-center justify-center  shrink-0 shadow-lg"  >
+            <img src="image/icon-container (1).png"alt="" class="transition-all duration-500 hover:scale-110" >
+          </div>
+          <div>
+            <p class="text-xs text-gray-400 font-medium">New Drops</p>
+            <h4 class="text-sm sm:text-base font-bold text-white">Every Week</h4>
+          </div>
+        </div>
+
+        <!-- Item 3: Trusted by Fandom Lovers -->
+        <div class="flex items-center gap-4 lg:px-6 pt-4 sm:pt-0">
+          <div>
+            <img src="image/icon-container (2).png" alt="" class="transition-all duration-500 hover:scale-110" >
+          </div>
+          <div>
+            <p class="text-xs text-gray-400 font-medium">Trusted by</p>
+            <h4 class="text-sm sm:text-base font-bold text-white">Fandom Lovers</h4>
+          </div>
+        </div>
+
+        <!-- Item 4: Easy Order via WhatsApp -->
+        <div class="flex items-center gap-4 lg:px-6 pt-4 sm:pt-0">
+          <div>
+          <img src="image/icon-container (3).png" alt="" class="transition-all duration-500 hover:scale-110">
+          </div>
+          <div>
+            <p class="text-xs text-gray-400 font-medium">Easy Order via</p>
+            <h4 class="text-sm sm:text-base font-bold text-white">WhatsApp</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- section-------------------------------3 -->
+
+<!-- SHOP BY CATEGORY SECTION -->
+<section class="w-full bg-[#0b0114] text-white py-12 px-4 sm:px-6 lg:px-12 overflow-hidden">
+
+  <!-- HEADER -->
+  <div class="max-w-7xl mx-auto flex justify-between items-center mb-8">
+
+    <div>
+      <p class="text-pink-500 text-xs uppercase tracking-[3px] mb-2">
+        Shop by Category
+      </p>
+
+      <h2 class="text-3xl sm:text-4xl font-bold">
+        Find Your Fandom
+      </h2>
+
+      <p class="text-gray-400 text-sm mt-2">
+        Pick your favorite kind of merch and start exploring.
+      </p>
+    </div>
+
+    <!-- DESKTOP BUTTONS -->
+    <div class="hidden sm:flex gap-3">
+
+      <button onclick="moveSlider(-1)"
+        class="w-11 h-11 rounded-full bg-white/10 hover:bg-pink-500 transition duration-300">
+        ❮
+      </button>
+
+      <button onclick="moveSlider(1)"
+        class="w-11 h-11 rounded-full bg-pink-500 hover:bg-pink-600 transition duration-300">
+        ❯
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- SLIDER -->
+  <div class="max-w-7xl mx-auto overflow-hidden">
+
+    <div id="slider" class="flex gap-5">
+
+      <!-- CARD 1 -->
+      <div class="category-card group relative shrink-0 w-full md:w-[calc((100%-40px)/3)] lg:w-[calc((100%-80px)/5)] h-[380px] rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500 transition duration-500">
+
+        <img src="image/00001.png"
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+        <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+          POPULAR
+        </span>
+
+        <div class="absolute bottom-5 left-4">
+          <h3 class="text-xl font-bold">Pins</h3>
+          <a href="#" class="text-yellow-400 text-xs">Explore Collection →</a>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="category-card group relative shrink-0 w-full md:w-[calc((100%-40px)/3)] lg:w-[calc((100%-80px)/5)] h-[380px] rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500 transition duration-500">
+
+        <img src="image/00002.png"
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+        <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+          POPULAR
+        </span>
+
+        <div class="absolute bottom-5 left-4">
+          <h3 class="text-xl font-bold">Posters</h3>
+          <a href="#" class="text-yellow-400 text-xs">Explore Collection →</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="category-card group relative shrink-0 w-full md:w-[calc((100%-40px)/3)] lg:w-[calc((100%-80px)/5)] h-[380px] rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500 transition duration-500">
+
+        <img src="image/00003.png"
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+        <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+          POPULAR
+        </span>
+
+        <div class="absolute bottom-5 left-4">
+          <h3 class="text-xl font-bold">Mugs</h3>
+          <a href="#" class="text-yellow-400 text-xs">Explore Collection →</a>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="category-card group relative shrink-0 w-full md:w-[calc((100%-40px)/3)] lg:w-[calc((100%-80px)/5)] h-[380px] rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500 transition duration-500">
+
+        <img src="image/00004.png"
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+        <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+          POPULAR
+        </span>
+
+        <div class="absolute bottom-5 left-4">
+          <h3 class="text-xl font-bold">Keychains</h3>
+          <a href="#" class="text-yellow-400 text-xs">Explore Collection →</a>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="category-card group relative shrink-0 w-full md:w-[calc((100%-40px)/3)] lg:w-[calc((100%-80px)/5)] h-[380px] rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500 transition duration-500">
+
+        <img src="image/00005.png"
+          class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+        <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+          POPULAR
+        </span>
+
+        <div class="absolute bottom-5 left-4">
+          <h3 class="text-xl font-bold">Plushies</h3>
+          <a href="#" class="text-yellow-400 text-xs">Explore Collection →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MOBILE BUTTONS -->
+  <div class="flex sm:hidden justify-center gap-4 mt-6">
+
+    <button onclick="moveSlider(-1)"
+      class="w-11 h-11 rounded-full bg-white/10 hover:bg-pink-500 transition duration-300">
+      ❮
+    </button>
+
+    <button onclick="moveSlider(1)"
+      class="w-11 h-11 rounded-full bg-pink-500 hover:bg-pink-600 transition duration-300">
+      ❯
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- INFINITE SLIDER JAVASCRIPT -->
+<script>
+  const slider = document.getElementById("slider");
+
+  let isAnimating = false;
+
+  function moveSlider(direction) {
+
+    if (isAnimating) return;
+
+    const cards = slider.querySelectorAll(".category-card");
+
+    if (cards.length < 2) return;
+
+    const firstCard = cards[0];
+    const lastCard = cards[cards.length - 1];
+
+    const gap = 20;
+    const step = firstCard.getBoundingClientRect().width + gap;
+
+    isAnimating = true;
+
+    // NEXT BUTTON
+    if (direction === 1) {
+
+      slider.style.transition = "transform 0.5s ease";
+      slider.style.transform = `translateX(-${step}px)`;
+
+      slider.addEventListener("transitionend", function handler() {
+
+        slider.removeEventListener("transitionend", handler);
+
+        slider.appendChild(firstCard);
+
+        slider.style.transition = "none";
+        slider.style.transform = "translateX(0)";
+
+        isAnimating = false;
+
+      }, { once: true });
+
+    }
+
+    // PREVIOUS BUTTON
+    else {
+
+      slider.style.transition = "none";
+      slider.prepend(lastCard);
+
+      slider.style.transform = `translateX(-${step}px)`;
+
+      slider.offsetHeight;
+
+      slider.style.transition = "transform 0.5s ease";
+      slider.style.transform = "translateX(0)";
+
+      slider.addEventListener("transitionend", function handler() {
+
+        slider.removeEventListener("transitionend", handler);
+        isAnimating = false;
+
+      }, { once: true });
+
+    }
+  }
+</script>
+
+
+  <!-- section------------------------------------4 -->
+  <!-- ABOUT US / SPLIT SECTION -->
+  <section class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 text-white relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+
+      <!-- Left Column: 3D Fandom Showcase Visual -->
+      <div class="lg:col-span-6 relative flex justify-center items-center">
+        <div
+          class="absolute top-4 md:-left-4 left-2 z-30 bg-white/[0.08] backdrop-blur-md border-2 border-[#FF4B91] px-3 py-1.5 rounded-xl shadow-lg text-[11px] font-medium text-gray-200">
+          Est. 2021 <br><span class="text-xs font-bold text-white">Fandom Hub</span>
+        </div>
+
+        <!-- Main Image Container with Glow Effect -->
+        <div
+          class="relative w-full max-w-[500px] h-[400px] sm:h-[450px] rounded-3xl overflow-hidden border border-white/10 bg-[#150a24] shadow-2xl flex items-center justify-center group">
+
+          <!-- Background Illustration / Character Image -->
+          <img src="image/image 24.png" alt="Fandom Characters"
+            class="absolute inset-0 md:w-full w-[90vw] h-full object-contain sm:object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+
+          <!-- Dark Vignette / Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0b0114] via-transparent to-black/10"></div>
+
+          <!-- Floating Badge Top-Left -->
+
+
+          <!-- Floating Badge Bottom-Left -->
+          <div
+            class="absolute bottom-4 left-4 bg-white/[0.08] backdrop-blur-md border border-white/15 px-4 py-2 rounded-2xl shadow-xl flex items-center gap-3">
+            <div class="flex -space-x-2 overflow-hidden">
+              <span
+                class="inline-block w-6 h-6 rounded-full bg-pink-500 text-[10px] flex items-center justify-center font-bold"><img
+                  src="image/avatar-1.png" alt=""></span>
+              <span
+                class="inline-block w-6 h-6 rounded-full bg-purple-500 text-[10px] flex items-center justify-center font-bold"><img
+                  src="image/avatar-2.png" alt=""></span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">1000+</div>
+              <div class="text-[10px] text-gray-300">Fandom Lovers</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Column: Content & Features -->
+      <div class="lg:col-span-6 space-y-4 text-center lg:text-left">
+
+        <!-- About Us Tag Badge -->
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/[0.07] backdrop-blur-md border border-pink-500/30 text-pink-400 text-xs font-semibold tracking-wider uppercase shadow-md mx-auto lg:mx-0
+      hover:text-blue-400 hover:border border-pink-500/60 hover:shadow-[0_0_10px_gray] transition-all">
+          ABOUT US
+        </div>
+
+        <!-- Main Headings with Color Highlights -->
+        <h2 class="md:text-[30px] text-[20px] font-bold leading-[40px]">
+          <span class="text-white block">Your Fandom. Your</span>
+          <span class="text-white block">Collection. <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-400 to-yellow-300">Your
+              Happy</span></span>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-400 block">Place.</span>
+        </h2>
+
+        <!-- Description Paragraph -->
+        <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 font-normal">
+          Welcome to Charms Studio — a colourful space for people who love fandoms, characters and everything in
+          between. From anime and K-pop to Disney, Sanrio, games and movies, we bring together fun and unique fandom
+          merchandise — all in one place.
+        </p>
+
+        <!-- Two Feature Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+
+          <!-- Card 1: Made for Fandom Lovers -->
+          <div
+            class="bg-white/[0.04] hover:bg-white/[0.07] border border-white/10 rounded-2xl p-4 flex items-start gap-3.5 transition-all text-left">
+            <div
+              class="w-10 h-10 rounded-xl bg-pink-500/20 border border-pink-500/40 flex items-center justify-center text-pink-400 shrink-0 mt-0.5 shadow-md hover:text- hover:border border-pink-500/60 hover:shadow-[0_0_10px_gray] transition-all">
+              <i class="fa-solid fa-heart text-sm"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Made for Fandom Lovers</h4>
+              <p class="text-xs text-gray-400 mt-1 leading-normal">Search by character, fandom or category and discover
+                cute Collections.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Custom Creations -->
+          <div
+            class="bg-white/[0.04] hover:bg-white/[0.07] border border-white/10 rounded-2xl p-4 flex items-start gap-3.5 transition-all text-left">
+            <div
+              class="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-400 shrink-0 mt-0.5 shadow-md hover:text-[white] hover:border border-pink-500/60 hover:shadow-[0_0_10px_gray] transition-all">
+              <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Custom Creations</h4>
+              <p class="text-xs text-gray-400 mt-1 leading-normal">Can't find what you're looking for? Reach out to us.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+          <a href="#explore"
+            class="px-7 py-3.5 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white font-semibold text-sm shadow-lg shadow-pink-500/30 hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+            <span>Explore Your Fandom</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <a href="#customize"
+            class="px-7 py-3.5 rounded-full bg-white/[0.07] backdrop-blur-md border border-white/15 hover:bg-white/15 text-white font-semibold text-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+            <span>Customize With Us</span>
+            <i class="fa-solid fa-arrow-right text-xs text-gray-400"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- section-----------------------------------------5 -->
+  <!-- FANDOM INSPIRATION SECTION (Rotated Cards Style) -->
+  
+<section class="w-full px-4 sm:px-6 lg:px-12 py-12 md:py-16 bg-[#0b0114] text-white overflow-hidden">
+
+  <!-- HEADER -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 w-full max-w-7xl mx-auto">
+
+    <div>
+      <span class="text-pink-500 text-xs sm:text-sm font-bold tracking-widest uppercase">
+        OUR FANDOM COLLECTION
+      </span>
+
+      <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mt-2 text-white leading-tight">
+        We have some fandoms<br>for inspiration.
+      </h2>
+    </div>
+
+    <a href="veiw.html"
+      class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-pink-500 hover:bg-pink-600 text-white font-semibold text-sm shadow-[0_0_20px_rgba(255,46,147,0.5)] hover:scale-105 active:scale-95 transition-all self-start md:self-auto">
+
+      <span>VIEW ALL FANDOMS</span>
+      <i class="fa-solid fa-arrow-right text-xs"></i>
+    </a>
+
+  </div>
+
+  <!-- CARDS SLIDER / DESKTOP GRID -->
+  <div class="w-full max-w-7xl mx-auto">
+
+    <div id="fandomSlider"
+      class="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pt-5 pb-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:overflow-visible md:pt-4 md:pb-0"
+      style="scrollbar-width:none;">
+
+      <!-- CARD 1: ANIME -->
+      <div class="fandom-card group relative shrink-0 w-full md:w-auto snap-center bg-[#150a24] border border-pink-500/40 rounded-3xl p-6 flex flex-col justify-end h-[420px] sm:h-[460px] overflow-hidden transition-all duration-500 rotate-[-2deg] md:-rotate-3 hover:rotate-0 hover:-translate-y-3 hover:border-pink-500 hover:shadow-[0_0_35px_rgba(255,46,147,0.35)] z-10">
+
+        <img src="image/10.png" alt="Anime"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 z-0">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0114] via-[#0b0114]/50 to-transparent z-10"></div>
+
+        <div class="relative z-20">
+          <h3 class="text-2xl font-medium text-white group-hover:text-pink-400 transition-colors">Anime</h3>
+          <p class="text-xs text-gray-300 uppercase tracking-wider font-semibold mt-1">FIGURES & KEYCHAINS</p>
+        </div>
+      </div>
+
+      <!-- CARD 2: K-POP -->
+      <div class="fandom-card group relative shrink-0 w-full md:w-auto snap-center bg-[#150a24] border border-pink-500/40 rounded-3xl p-6 flex flex-col justify-end h-[420px] sm:h-[460px] overflow-hidden transition-all duration-500 rotate-[2deg] md:-rotate-1 hover:rotate-0 hover:-translate-y-3 hover:border-pink-500 hover:shadow-[0_0_35px_rgba(255,46,147,0.35)] z-20">
+
+        <img src="image/11.png" alt="K-Pop"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 z-0">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0114] via-[#0b0114]/50 to-transparent z-10"></div>
+
+        <div class="relative z-20">
+          <h3 class="text-2xl font-medium text-white group-hover:text-pink-400 transition-colors">K-Pop</h3>
+          <p class="text-xs text-gray-300 uppercase tracking-wider font-semibold mt-1">ALBUMS & PHOTOCARDS</p>
+        </div>
+      </div>
+
+      <!-- CARD 3: DISNEY -->
+      <div class="fandom-card group relative shrink-0 w-full md:w-auto snap-center bg-[#150a24] border border-pink-500/40 rounded-3xl p-6 flex flex-col justify-end h-[420px] sm:h-[460px] overflow-hidden transition-all duration-500 rotate-[-2deg] md:rotate-1 hover:rotate-0 hover:-translate-y-3 hover:border-pink-500 hover:shadow-[0_0_35px_rgba(255,46,147,0.35)] z-20">
+
+        <img src="image/12.png" alt="Disney"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 z-0">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0114] via-[#0b0114]/50 to-transparent z-10"></div>
+
+        <div class="relative z-20">
+          <h3 class="text-2xl font-medium text-white group-hover:text-pink-400 transition-colors">Disney</h3>
+          <p class="text-xs text-gray-300 uppercase tracking-wider font-semibold mt-1">PLUSHIES & PINS</p>
+        </div>
+      </div>
+
+      <!-- CARD 4: SANRIO -->
+      <div class="fandom-card group relative shrink-0 w-full md:w-auto snap-center bg-[#150a24] border border-pink-500/40 rounded-3xl p-6 flex flex-col justify-end h-[420px] sm:h-[460px] overflow-hidden transition-all duration-500 rotate-[2deg] md:rotate-1 hover:rotate-0 hover:-translate-y-3 hover:border-pink-500 hover:shadow-[0_0_35px_rgba(255,46,147,0.35)] z-10">
+
+        <img src="image/14.png" alt="Sanrio"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 z-0">
+
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0b0114] via-[#0b0114]/50 to-transparent z-10"></div>
+
+        <div class="relative z-20">
+          <h3 class="text-2xl font-medium text-white group-hover:text-pink-400 transition-colors">Sanrio</h3>
+          <p class="text-xs text-gray-300 uppercase tracking-wider font-semibold mt-1">STATIONERY & ACCESSORIES</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MOBILE DOTS -->
+    <div id="fandomDots" class="flex md:hidden justify-center items-center gap-2 mt-4">
+
+      <button onclick="goToFandom(0)" class="fandom-dot w-5 h-2 rounded-full bg-pink-500" aria-label="Anime"></button>
+
+      <button onclick="goToFandom(1)" class="fandom-dot w-2 h-2 rounded-full bg-gray-600" aria-label="K-Pop"></button>
+
+      <button onclick="goToFandom(2)" class="fandom-dot w-2 h-2 rounded-full bg-gray-600" aria-label="Disney"></button>
+
+      <button onclick="goToFandom(3)" class="fandom-dot w-2 h-2 rounded-full bg-gray-600" aria-label="Sanrio"></button>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SLIDER JAVASCRIPT -->
+<script>
+  const fandomSlider = document.getElementById("fandomSlider");
+  const fandomCards = document.querySelectorAll(".fandom-card");
+  const fandomDots = document.querySelectorAll(".fandom-dot");
+
+  function goToFandom(index) {
+    const card = fandomCards[index];
+
+    fandomSlider.scrollTo({
+      left: card.offsetLeft - fandomSlider.offsetLeft,
+      behavior: "smooth"
+    });
+
+    updateFandomDots(index);
+  }
+
+  function updateFandomDots(index) {
+    fandomDots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.remove("bg-gray-600", "w-2");
+        dot.classList.add("bg-pink-500", "w-5");
+      } else {
+        dot.classList.remove("bg-pink-500", "w-5");
+        dot.classList.add("bg-gray-600", "w-2");
+      }
+    });
+  }
+
+  fandomSlider.addEventListener("scroll", () => {
+    if (window.innerWidth >= 768) return;
+
+    const sliderCenter =
+      fandomSlider.getBoundingClientRect().left +
+      fandomSlider.clientWidth / 2;
+
+    let activeIndex = 0;
+    let smallestDistance = Infinity;
+
+    fandomCards.forEach((card, index) => {
+      const rect = card.getBoundingClientRect();
+      const cardCenter = rect.left + rect.width / 2;
+      const distance = Math.abs(sliderCenter - cardCenter);
+
+      if (distance < smallestDistance) {
+        smallestDistance = distance;
+        activeIndex = index;
+      }
+    });
+
+    updateFandomDots(activeIndex);
+  });
+</script>
+
+
+
+  
+  <!-- section----------------------6 -->
+  <!-- BEST SELLERS THIS WEEK SECTION -->
+
+<style>
+  .product-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .product-track {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.6s ease-in-out;
+  }
+
+  .product-card {
+    flex: 0 0 calc((100% - 72px) / 4);
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .product-card {
+      flex: 0 0 calc((100% - 24px) / 2);
+    }
+  }
+
+  @media (max-width: 639px) {
+    .product-track {
+      gap: 16px;
+    }
+
+    .product-card {
+      flex: 0 0 100%;
+    }
+  }
+</style>
+
+<section class="w-full px-4 sm:px-6 lg:px-12 py-12 bg-[#0b0114] text-white overflow-hidden">
+
+  <!-- HEADER -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6 w-full max-w-7xl mx-auto">
+
+    <div>
+      <span class="text-pink-500 text-xs sm:text-sm font-bold tracking-widest uppercase">
+        TRENDING NOW
+      </span>
+
+      <h2 class="text-xl md:text-4xl font-bold tracking-tight mt-2 text-white leading-tight">
+        Best Sellers This Week
+      </h2>
+
+      <p class="text-gray-400 text-sm sm:text-base mt-2">
+        The fandom favourites everyone is loving right now.
+      </p>
+    </div>
+
+    <!-- DESKTOP BUTTONS -->
+    <div class="hidden sm:flex items-center gap-3">
+
+      <button type="button" onclick="moveProduct(-1)"
+        class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-pink-500/20 hover:border-pink-500/50 hover:shadow-[0_0_15px_rgba(255,46,147,0.3)] transition-all active:scale-95 cursor-pointer"
+        aria-label="Previous">
+        <i class="fa-solid fa-chevron-left text-sm"></i>
+      </button>
+
+      <button type="button" onclick="moveProduct(1)"
+        class="w-11 h-11 rounded-full bg-pink-500 text-white flex items-center justify-center hover:bg-pink-600 shadow-lg shadow-pink-500/40 hover:shadow-[0_0_25px_rgba(255,46,147,0.6)] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+        aria-label="Next">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- PRODUCT SLIDER -->
+  <div class="product-slider w-full max-w-7xl mx-auto">
+    <div id="productTrack" class="product-track">
+
+      <!-- CARD 1 -->
+      <div class="product-card group relative bg-[#130920] border border-white/10 rounded-3xl p-3 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+
+        <div>
+          <span class="absolute top-4 left-4 z-20 bg-pink-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+            BEST SELLER
+          </span>
+
+          <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+            <img src="image/21.png" alt="Gojo Acrylic Keychain"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+
+          <p class="text-[11px] text-gray-400 font-semibold uppercase tracking-wider">
+            JUJUTSU KAISEN • GOJO
+          </p>
+
+          <h3 class="text-lg font-bold text-white mt-1 group-hover:text-pink-400 transition-colors">
+            Gojo Acrylic Keychain
+          </h3>
+        </div>
+
+        <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-between">
+          <span class="text-xl font-medium text-white">Rs. 450</span>
+          <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            In Stock
+          </span>
+        </div>
+
+        <a href="#"
+          class="mt-4 w-full py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(16,185,129,0.3)] hover:shadow-[0_6px_25px_rgba(16,185,129,0.6)] hover:scale-[1.02] active:scale-95 transition-all">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Ask on WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="product-card group relative bg-[#130920] border border-white/10 rounded-3xl p-3 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+
+        <div>
+          <span class="absolute top-4 left-4 z-20 bg-pink-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+            BEST SELLER
+          </span>
+
+          <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+            <img src="image/22.png" alt="Pochacco Plushie"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+
+          <p class="text-[11px] text-gray-400 font-semibold uppercase tracking-wider">
+            SANRIO • POCHACCO
+          </p>
+
+          <h3 class="text-lg font-bold text-white mt-1 group-hover:text-pink-400 transition-colors">
+            Pochacco Plushie
+          </h3>
+        </div>
+
+        <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-between">
+          <span class="text-xl font-medium text-white">Rs. 890</span>
+          <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            In Stock
+          </span>
+        </div>
+
+        <a href="#"
+          class="mt-4 w-full py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(16,185,129,0.3)] hover:shadow-[0_6px_25px_rgba(16,185,129,0.6)] hover:scale-[1.02] active:scale-95 transition-all">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Ask on WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="product-card group relative bg-[#130920] border border-white/10 rounded-3xl p-3 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+
+        <div>
+          <span class="absolute top-4 left-4 z-20 bg-pink-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+            BEST SELLER
+          </span>
+
+          <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+            <img src="image/23.png" alt="BTS Photocard Set"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+
+          <p class="text-[11px] text-gray-400 font-semibold uppercase tracking-wider">
+            K-POP • BTS
+          </p>
+
+          <h3 class="text-lg font-bold text-white mt-1 group-hover:text-pink-400 transition-colors">
+            BTS Photocard Set
+          </h3>
+        </div>
+
+        <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-between">
+          <span class="text-xl font-medium text-white">Rs. 650</span>
+          <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            In Stock
+          </span>
+        </div>
+
+        <a href="#"
+          class="mt-4 w-full py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(16,185,129,0.3)] hover:shadow-[0_6px_25px_rgba(16,185,129,0.6)] hover:scale-[1.02] active:scale-95 transition-all">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Ask on WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="product-card group relative bg-[#130920] border border-white/10 rounded-3xl p-3 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+
+        <div>
+          <span class="absolute top-4 left-4 z-20 bg-pink-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+            BEST SELLER
+          </span>
+
+          <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+            <img src="image/24.png" alt="Totoro Enamel Pin"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+
+          <p class="text-[11px] text-gray-400 font-semibold uppercase tracking-wider">
+            STUDIO GHIBLI • TOTORO
+          </p>
+
+          <h3 class="text-lg font-bold text-white mt-1 group-hover:text-pink-400 transition-colors">
+            Totoro Enamel Pin
+          </h3>
+        </div>
+
+        <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-between">
+          <span class="text-xl font-medium text-white">Rs. 350</span>
+          <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            In Stock
+          </span>
+        </div>
+
+        <a href="#"
+          class="mt-4 w-full py-3 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-xs flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(16,185,129,0.3)] hover:shadow-[0_6px_25px_rgba(16,185,129,0.6)] hover:scale-[1.02] active:scale-95 transition-all">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Ask on WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MOBILE BUTTONS -->
+  <div class="flex sm:hidden items-center justify-center gap-3 mt-7">
+
+    <button type="button" onclick="moveProduct(-1)"
+      class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-pink-500/20 transition-all"
+      aria-label="Previous">
+      <i class="fa-solid fa-chevron-left text-sm"></i>
+    </button>
+
+    <button type="button" onclick="moveProduct(1)"
+      class="w-11 h-11 rounded-full bg-pink-500 text-white flex items-center justify-center hover:bg-pink-600 shadow-lg shadow-pink-500/40 transition-all"
+      aria-label="Next">
+      <i class="fa-solid fa-chevron-right text-sm"></i>
+    </button>
+
+  </div>
+
+</section>
+
+
+<script>
+  const productTrack = document.getElementById("productTrack");
+
+  let productIndex = 0;
+  let productAutoSlide;
+  let isMoving = false;
+
+  const originalCards = Array.from(
+    productTrack.querySelectorAll(".product-card")
+  );
+
+  const totalCards = originalCards.length;
+
+  // Infinite slider ke liye duplicate cards
+  originalCards.forEach(card => {
+    productTrack.appendChild(card.cloneNode(true));
+  });
+
+  originalCards.slice().reverse().forEach(card => {
+    productTrack.insertBefore(card.cloneNode(true), productTrack.firstChild);
+  });
+
+  // Original cards ke darmiyan starting position
+  productIndex = totalCards;
+
+  function getStep() {
+    const card = productTrack.querySelector(".product-card");
+    const gap = parseFloat(getComputedStyle(productTrack).gap) || 0;
+
+    return card.getBoundingClientRect().width + gap;
+  }
+
+  function setPosition(animate = true) {
+    productTrack.style.transition = animate
+      ? "transform 0.6s ease-in-out"
+      : "none";
+
+    productTrack.style.transform =
+      `translateX(-${productIndex * getStep()}px)`;
+  }
+
+  // Poora card slide hoga
+  function moveProduct(direction) {
+    if (isMoving) return;
+
+    isMoving = true;
+    productIndex += direction;
+
+    setPosition(true);
+  }
+
+  // Slide complete hone ke baad infinite loop
+  productTrack.addEventListener("transitionend", function (event) {
+    if (event.propertyName !== "transform") return;
+
+    if (productIndex >= totalCards * 2) {
+      productIndex = totalCards;
+      setPosition(false);
+    }
+
+    if (productIndex <= 0) {
+      productIndex = totalCards;
+      setPosition(false);
+    }
+
+    isMoving = false;
+  });
+
+  // Mobile auto scroll
+  function startProductAutoSlide() {
+    clearInterval(productAutoSlide);
+
+    if (window.innerWidth <= 639) {
+      productAutoSlide = setInterval(() => {
+        moveProduct(1);
+      }, 3000);
+    }
+  }
+
+  // Initial position
+  window.addEventListener("load", () => {
+    setPosition(false);
+    startProductAutoSlide();
+  });
+
+  window.addEventListener("resize", () => {
+    setPosition(false);
+    startProductAutoSlide();
+  });
+</script>
+
+
+
+
+
+
+
+  <!-- section-----------------------------------7 -->
+  <!-- WHY CHOOSE US SECTION -->
+<section id="why-choose-us" class="w-full px-4 sm:px-6 lg:px-12 py-16 bg-[#0b0114] text-white">
+
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <span class="text-pink-500 text-xs sm:text-sm font-bold tracking-widest uppercase">WHY CHOOSE US</span>
+      <h2 class="text-2xl md:text-5xl font-bold tracking-tight mt-2 text-white leading-tight">
+        Why Fandom Lovers<br>Choose Charms Studio
+      </h2>
+    </div>
+
+    <!-- Features Container -->
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Slider Wrapper for Mobile (Snap Scroll) & Grid for Desktop -->
+      <div id="features-slider" class="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar pb-6 md:pb-0 scroll-smooth">
+
+        <!-- Card 1 -->
+        <div class="slider-card min-w-[100%] sm:min-w-[100%] md:min-w-0 snap-center w-full group relative bg-[#130920] border border-white/10 rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-600/40 to-purple-800/40 border border-pink-500/30 flex items-center justify-center text-pink-400 mb-6 shadow-lg shadow-pink-500/10 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,46,147,0.5)] group-hover:border-pink-500 transition-all duration-300">
+              <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            </div>
+            <h3 class="text-xl font-medium text-white group-hover:text-pink-400 transition-colors">Search by Character</h3>
+            <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+              Find any character across all fandoms instantly. Search Gojo, Nezuko, Hello Kitty — discover every matching product.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="slider-card min-w-[100%] sm:min-w-[100%] md:min-w-0 snap-center w-full group relative bg-[#130920] border border-white/10 rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-600/40 to-indigo-800/40 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 shadow-lg shadow-purple-500/10 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:border-purple-500 transition-all duration-300">
+              <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+            </div>
+            <h3 class="text-xl font-medium text-white group-hover:text-purple-400 transition-colors">1000+ Fandom Products</h3>
+            <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+              From keychains and plushies to pins, posters, mugs, t-shirts, stickers and photocards.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="slider-card min-w-[100%] sm:min-w-[100%] md:min-w-0 snap-center w-full group relative bg-[#130920] border border-white/10 rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-600/40 to-pink-800/40 border border-rose-500/30 flex items-center justify-center text-rose-400 mb-6 shadow-lg shadow-rose-500/10 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(244,63,94,0.5)] group-hover:border-rose-500 transition-all duration-300">
+              <i class="fa-solid fa-globe text-xl"></i>
+            </div>
+            <h3 class="text-xl font-medium text-white group-hover:text-rose-400 transition-colors">7 Fandom Universes</h3>
+            <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+              Anime, K-Pop, Disney, Sanrio, Games, Movies, TV Series — all your favourites in one place.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="slider-card min-w-[100%] sm:min-w-[100%] md:min-w-0 snap-center w-full group relative bg-[#130920] border border-white/10 rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-600/40 to-blue-800/40 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 shadow-lg shadow-purple-500/10 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:border-purple-500 transition-all duration-300">
+              <i class="fa-solid fa-bolt text-xl"></i>
+            </div>
+            <h3 class="text-xl font-medium text-white group-hover:text-purple-400 transition-colors">New Drops Every Week</h3>
+            <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+              Fresh stock added regularly. Never miss the latest fandom finds and limited edition collectibles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="slider-card min-w-[100%] sm:min-w-[100%] md:min-w-0 snap-center w-full group relative bg-[#130920] border border-white/10 rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-600/40 to-rose-800/40 border border-pink-500/30 flex items-center justify-center text-pink-400 mb-6 shadow-lg shadow-pink-500/10 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,46,147,0.5)] group-hover:border-pink-500 transition-all duration-300">
+              <i class="fa-solid fa-paintbrush text-xl"></i>
+            </div>
+            <h3 class="text-xl font-medium text-white group-hover:text-pink-400 transition-colors">Custom Creations</h3>
+            <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+              Cannot find what you want? Tell us on WhatsApp and we will create something custom just for you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="slider-card min-w-[100%] sm:min-w-[100%] md:min-w-0 snap-center w-full group relative bg-[#130920] border border-white/10 rounded-3xl p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.2)]">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-600/40 to-pink-800/40 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 shadow-lg shadow-purple-500/10 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] group-hover:border-purple-500 transition-all duration-300">
+              <i class="fa-solid fa-heart text-xl"></i>
+            </div>
+            <h3 class="text-xl font-medium text-white group-hover:text-purple-400 transition-colors">Trusted by 1000+ Fans</h3>
+            <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+              A growing community of fandom lovers who trust us for quality merch and quick service.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CSS -->
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+
+
+
+  <!-- section-------------------------------8 -->
+  <!-- NEW ARRIVALS SECTION -->
+  
+<section class="w-full px-4 sm:px-6 lg:px-12 py-12 md:py-16 bg-[#0b0114] text-white overflow-hidden">
+
+    <!-- Header with Title & View All Button -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6 w-full max-w-7xl mx-auto">
+      <div>
+        <span class="text-pink-500 text-xs sm:text-sm font-bold tracking-widest uppercase">JUST DROPPED</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mt-1 text-white">
+          New Arrivals
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base mt-1">Fresh fandom finds, just added to the collection.</p>
+      </div>
+
+      <!-- View All Button with Glow Hover -->
+      <a href="arrival.html"
+        class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-pink-500 hover:bg-pink-600 text-white font-semibold text-xs sm:text-sm uppercase tracking-wider shadow-[0_0_20px_rgba(255,46,147,0.4)] hover:shadow-[0_0_30px_rgba(255,46,147,0.7)] hover:scale-105 active:scale-95 transition-all self-start md:self-auto">
+        <span>VIEW ALL NEW ARRIVALS</span>
+        <i class="fa-solid fa-arrow-right text-xs"></i>
+      </a>
+    </div>
+
+    <!-- New Arrivals Continuous Moving Marquee -->
+    <div class="w-full max-w-7xl mx-auto overflow-hidden relative">
+      <div class="marquee-track flex gap-6 py-2 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:overflow-visible">
+
+        <!-- Card 1: Nezuko LED Keychain -->
+        <div class="group relative bg-[#130920] border border-white/10 rounded-3xl p-5 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.25)] shrink-0 w-[280px] sm:w-[320px] md:w-auto">
+          <div>
+            <span class="absolute top-8 left-8 z-20 bg-green-400 text-black text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">NEW</span>
+            <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+              <img src="image/031.png" alt="Nezuko LED Keychain" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <p class="text-[11px] text-pink-500 font-medium uppercase tracking-wider">DEMON SLAYER • NEZUKO</p>
+            <h3 class="text-lg font-medium text-white mt-1 group-hover:text-pink-400 transition-colors">Nezuko LED Keychain</h3>
+          </div>
+          <div class="pt-4 mt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xl font-medium text-white">Rs. 550</span>
+            <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> In Stock
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 2: Jimin Photocard Bundle -->
+        <div class="group relative bg-[#130920] border border-white/10 rounded-3xl p-5 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.25)] shrink-0 w-[280px] sm:w-[320px] md:w-auto">
+          <div>
+            <span class="absolute top-8 left-8 z-20 bg-emerald-400 text-black text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">NEW</span>
+            <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+              <img src="image/032.png" alt="Jimin Photocard Bundle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <p class="text-[11px] text-pink-500 font-medium uppercase tracking-wider">K-POP • BTS</p>
+            <h3 class="text-lg font-medium text-white mt-1 group-hover:text-pink-400 transition-colors">Jimin Photocard Bundle</h3>
+          </div>
+          <div class="pt-4 mt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xl font-medium text-white">Rs. 750</span>
+            <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> In Stock
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 3: Kuromi Plush Bag Charm -->
+        <div class="group relative bg-[#130920] border border-white/10 rounded-3xl p-5 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.25)] shrink-0 w-[280px] sm:w-[320px] md:w-auto">
+          <div>
+            <span class="absolute top-8 left-8 z-20 bg-emerald-400 text-black text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">NEW</span>
+            <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+              <img src="image/033.png" alt="Kuromi Plush Bag Charm" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <p class="text-[11px] text-pink-500 font-medium uppercase tracking-wider">SANRIO • KUROMI</p>
+            <h3 class="text-lg font-medium text-white mt-1 group-hover:text-pink-400 transition-colors">Kuromi Plush Bag Charm</h3>
+          </div>
+          <div class="pt-4 mt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xl font-medium text-white">Rs. 680</span>
+            <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> In Stock
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 4: Pikachu Enamel Pin Set -->
+        <div class="group relative bg-[#130920] border border-white/10 rounded-3xl p-5 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.25)] shrink-0 w-[280px] sm:w-[320px] md:w-auto">
+          <div>
+            <span class="absolute top-8 left-8 z-20 bg-emerald-400 text-black text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">NEW</span>
+            <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+              <img src="image/034.png" alt="Pikachu Enamel Pin Set" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <p class="text-[11px] text-pink-500 font-medium uppercase tracking-wider">GAMES • POKEMON</p>
+            <h3 class="text-lg font-medium text-white mt-1 group-hover:text-pink-400 transition-colors">Pikachu Enamel Pin Set</h3>
+          </div>
+          <div class="pt-4 mt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xl font-medium text-white">Rs. 420</span>
+            <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> In Stock
+            </span>
+          </div>
+        </div>
+
+        <!-- Duplicated Cards for Seamless Infinite Loop -->
+        <!-- Card 1 Duplicate -->
+        <div class="group relative bg-[#130920] border border-white/10 rounded-3xl p-5 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.25)] shrink-0 w-[280px] sm:w-[320px] md:hidden">
+          <div>
+            <span class="absolute top-8 left-8 z-20 bg-green-400 text-black text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">NEW</span>
+            <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+              <img src="image/031.png" alt="Nezuko LED Keychain" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <p class="text-[11px] text-pink-500 font-medium uppercase tracking-wider">DEMON SLAYER • NEZUKO</p>
+            <h3 class="text-lg font-medium text-white mt-1 group-hover:text-pink-400 transition-colors">Nezuko LED Keychain</h3>
+          </div>
+          <div class="pt-4 mt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xl font-medium text-white">Rs. 550</span>
+            <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> In Stock
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 2 Duplicate -->
+        <div class="group relative bg-[#130920] border border-white/10 rounded-3xl p-5 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:border-pink-500/50 hover:shadow-[0_10px_30px_rgba(255,46,147,0.25)] shrink-0 w-[280px] sm:w-[320px] md:hidden">
+          <div>
+            <span class="absolute top-8 left-8 z-20 bg-emerald-400 text-black text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">NEW</span>
+            <div class="w-full h-56 rounded-2xl bg-[#0b0114] flex items-center justify-center overflow-hidden mb-4 relative border border-white/5">
+              <img src="image/032.png" alt="Jimin Photocard Bundle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <p class="text-[11px] text-pink-500 font-medium uppercase tracking-wider">K-POP • BTS</p>
+            <h3 class="text-lg font-medium text-white mt-1 group-hover:text-pink-400 transition-colors">Jimin Photocard Bundle</h3>
+          </div>
+          <div class="pt-4 mt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xl font-medium text-white">Rs. 750</span>
+            <span class="text-xs text-emerald-400 flex items-center gap-1.5 font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> In Stock
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Continuous Marquee CSS Animation -->
+  <style>
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-50% - 12px));
+      }
+    }
+
+    @media (max-width: 767px) {
+      .marquee-track {
+        display: flex;
+        width: max-content;
+        animation: marquee 20s linear infinite;
+      }
+      .marquee-track:hover {
+        animation-play-state: paused;
+      }
+    }
+  </style>
+
+
+  
+  <!-- section-----------------------------------------9 -->
+
+  <!-- CALL TO ACTION BANNER SECTION (Blurred BG with Drop Shadow & Glow Color) -->
+  <section class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16">
+
+    <!-- Banner Card Container with Blur & Drop Shadow -->
+    <div
+      class="relative w-full rounded-3xl p-8 sm:p-12 lg:p-16 text-center overflow-hidden bg-[#FF4B9126]  border border-pink-500/40  transition-all duration-500 hover:shadow-[0_15px_60px_rgba(255,46,147,0.5)] opacity-65 bg-center bg-cover"
+      style="background-image: url(image/05.jpg);">
+
+      <!-- Neon Drop Color Glowing Blobs in Background -->
+
+
+      <!-- Content Wrapper -->
+      <div class="relative z-10 max-w-2xl mx-auto space-y-4">
+
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight drop-shadow-md">
+          Found Something You Love?
+        </h2>
+
+        <!-- Subtitle Description -->
+        <p class="text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow">
+          Have a question about a product, availability or customization?<br class="hidden sm:inline">
+          Ask us on WhatsApp and we will make it happen.
+        </p>
+
+        <!-- Action Buttons with Hover & Shadows -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+
+          <!-- WhatsApp Button -->
+          <button href="https://wa.me/" target="_blank"
+            class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#25D366] hover:bg-emerald-600 text-white font-semibold text-sm shadow-[0_4px_25px_rgba(16,185,129,0.4)] hover:shadow-[0_6px_30px_rgba(16,185,129,0.7)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2.5">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Ask on WhatsApp</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+
+          <!-- Browse Collection Button -->
+          <a href="#collection"
+            class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm backdrop-blur-md shadow-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.25)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+            <span>Browse Collection</span>
+            <i class="fa-solid fa-arrow-right text-xs text-gray-300"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- section----------------------------------------------10 -->
+
+  <!-- FOOTER SECTION -->
+  <footer class="w-full bg-[#0b0114] text-white pt-16 pb-8 border-t border-pink-500/30 relative overflow-hidden">
+
+    <!-- Subtle Top Neon Glow Line -->
+    <div
+      class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-pink-500 to-transparent">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+
+        <!-- Brand Column (4 Cols) -->
+        <div class="lg:col-span-4 space-y-4">
+          <!-- Logo & Title -->
+          <div class="flex items-center gap-3">
+            <img src="image/001.png" alt="CharmsStudio Logo"
+              class="w-10 h-10 rounded-full object-cover border border-pink-500/40">
+            <span class="text-xl font-extrabold tracking-tight text-white">Charms<span
+                class="text-pink-500">Studio</span></span>
+          </div>
+
+          <!-- Tagline & Description -->
+          <p class="text-sm font-semibold text-white">Your Fandom. Your Collection.</p>
+          <p class="text-xs text-gray-400 leading-relaxed max-w-sm">
+            Discover colourful fandom merchandise across anime, K-pop, Disney, Sanrio, games, movies and more.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/"
+              class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-pink-400 hover:border-pink-500 hover:shadow-[0_0_15px_rgba(255,46,147,0.4)] transition-all">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="https://www.tiktok.com/en/"
+              class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-pink-400 hover:border-pink-500 hover:shadow-[0_0_15px_rgba(255,46,147,0.4)] transition-all">
+              <i class="fa-brands fa-tiktok text-sm"></i>
+            </a>
+            <a href="https://www.facebook.com/"
+              class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-blue-400 hover:border-blue-400 hover:shadow-[0_0_15px_rgba(255,46,147,0.4)] transition-all">
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Explore Links (3 Cols) -->
+        <div class="lg:col-span-3 md:mt-0 mt-[60px] space-y-4">
+          <h3 class="text-xs font-bold tracking-widest uppercase text-white hover:text-rose-600">Explore</h3>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="#" class="hover:text-pink-400 transition-colors">All Products</a></li>
+            <li><a href="#" class="hover:text-pink-400 transition-colors">Fandoms</a></li>
+            <li><a href="#" class="hover:text-pink-400 transition-colors">Categories</a></li>
+            <li><a href="#" class="hover:text-pink-400 transition-colors">New Arrivals</a></li>
+            <li><a href="#" class="hover:text-pink-400 transition-colors">Best Sellers</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Links (3 Cols) -->
+        <div class="lg:col-span-3 space-y-4">
+          <h3 class="text-xs font-bold tracking-widest uppercase text-white hover:text-rose-600">Help</h3>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="#" class="hover:text-pink-400 transition-colors">Ask on WhatsApp</a></li>
+            <li><a href="#" class="hover:text-pink-400 transition-colors">Customization</a></li>
+            <li><a href="#" class="hover:text-pink-400 transition-colors">Product Availability</a></li>
+            <li><a href="#" class="hover:text-pink-400 transition-colors">Shipping Info</a></li>
+            <li><a href="#" class="hover:text-pink-400 transition-colors">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect Links (2 Cols) -->
+        <div class="lg:col-span-2 space-y-4">
+          <h3 class="text-xs font-bold tracking-widest uppercase text-white hover:text-rose-700">Connect</h3>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="https://www.instagram.com/" target="_self"
+                class="hover:text-pink-400 transition-colors">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/en/" target="_self"
+                class="hover:text-pink-400 transition-colors">TikTok</a></li>
+            <li><a href="https://www.facebook.com/" target="_self"
+                class="hover:text-pink-400 transition-colors">Facebook</a></li>
+            <li><a href="https://web.whatsapp.com/" target="_self"
+                class="hover:text-pink-400 transition-colors">WhatsApp</a></li>
+            <li><a href="https://mail.google.com/mail/u/0/" target="_self"
+                class="hover:text-pink-400 transition-colors">Email Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright & Policies Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <p>© 2026 Charms Studio. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
